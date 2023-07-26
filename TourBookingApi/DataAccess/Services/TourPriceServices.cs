@@ -195,11 +195,11 @@ namespace DataAccess.Services
             }
             try
             {
-                var tours = tourPrice.Tour;
+                /*var tours = tourPrice.Tour;
                 if (tours != null)
                 {
                     _unitOfWork.Repository<Tour>().Delete(tours);
-                }
+                }*/
 
                 _unitOfWork.Repository<TourPrice>().Delete(tourPrice);
                 await _unitOfWork.CommitAsync();

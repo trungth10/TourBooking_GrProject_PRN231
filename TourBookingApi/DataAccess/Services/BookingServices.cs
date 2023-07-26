@@ -500,8 +500,8 @@ namespace DataAccess.Services
             }
             try
             {
-                var tours = booking.Tour;
-                if (tours != null)
+                //var tours = booking.Tour;
+                /*if (tours != null)
                 {
                     _unitOfWork.Repository<Tour>().Delete(tours);
                 }
@@ -509,7 +509,7 @@ namespace DataAccess.Services
                 if (accounts != null)
                 {
                     _unitOfWork.Repository<Account>().Delete(accounts);
-                }
+                }*/
                 var payments = booking.Payments.ToList();
                 foreach (var payment in payments)
                 {

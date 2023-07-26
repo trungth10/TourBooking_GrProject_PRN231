@@ -250,10 +250,10 @@ namespace DataAccess.Services
             try
             {
                 var bookings = payment.Booking;
-                if (bookings != null)
+               /* if (bookings != null)
                 {
                     _unitOfWork.Repository<Booking>().Delete(bookings);
-                }
+                }*/
 
                 _unitOfWork.Repository<Payment>().Delete(payment);
                 await _unitOfWork.CommitAsync();
